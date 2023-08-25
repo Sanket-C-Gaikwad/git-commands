@@ -14,3 +14,7 @@ Git is a version control system, while GitHub is a platform that provides a host
 - git checkout -b feature-1
 - git checkout main
 - git push -u origin feature-1 (push the code upstream to the github new feature branch)
+
+> Once the featur is merged you call pull the changes to your local repo and delete the featrue if the upstream is setup
+- git pull
+- git brach -d feature-1
