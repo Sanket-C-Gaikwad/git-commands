@@ -9,7 +9,8 @@ Version control is used to manage changes to the document or the codebase.
 > What's the difference between Git and GitHub?
 Git is a version control system, while GitHub is a platform that provides a hosting website for Git repositories and collaboration tools.
 
-> Adding a feature bracnch:
+> Adding a feature branch:
 - git branch
 - git checkout -b feature-1
 - git checkout main
+- git push -u origin feature-1 (push the code upstream to the github new feature branch)
