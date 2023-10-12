@@ -33,6 +33,7 @@ Git is a version control system, while GitHub is a platform that provides a host
 > Adding a feature branch:
 - git branch
 - git checkout -b feature-1
+- git branch --set-upstream-to=origin/feature111
 - git checkout main
 - git add . (or -a)
 - git commit -am "add plus commit, no need of add step"
