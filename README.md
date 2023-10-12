@@ -4,6 +4,7 @@ Version control is used to manage changes to the document or the codebase.
 
 > Initializing a repo
 - git init
+- git branch -m master main
 
 > stagin files
 - git add file1.js            # Stages a single file
