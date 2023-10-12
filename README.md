@@ -6,11 +6,18 @@ Version control is used to manage changes to the document or the codebase.
 - git init
 - git branch -m master main
 
-> stagin files
+> staging files
 - git add file1.js            # Stages a single file
 - git add file1.js file2.js   # Stages multiple files
 - git add *.js                # Stages with a pattern
 - git add .                   # Stages the current directory and all its content
+
+> How to setup global and local users for the repo
+- git config user.name "Your Name"
+- git config user.email "youremail@example.com"
+- git config --global user.name "Your Name"
+- git config --global user.email "youremail@example.com"
+
 
 > Viewing the status
 - git status                  # Full status
