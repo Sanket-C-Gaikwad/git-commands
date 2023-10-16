@@ -17,6 +17,8 @@ Version control is used to manage changes to the document or the codebase.
 - git config user.email "youremail@example.com"
 - git config --global user.name "Your Name"
 - git config --global user.email "youremail@example.com"
+- git config user.email
+- git config user.name
 
 
 > Viewing the status
@@ -165,38 +167,28 @@ Git is a version control system, while GitHub is a platform that provides a host
 
 Start by checking out the branch where the conflict occurred (e.g., the main branch, assuming that's where you're merging your changes).
 
-bash
-Copy code
-git checkout main
-Then, start the merge process. If you're in the middle of a merge with conflicts, you might have paused at this point. If not, initiate the merge with your feature branch.
 
-bash
-Copy code
-git merge feature-branch
-When you encounter the merge conflict, you can use Git's merge strategy to favor the changes of one side over the other. In this case, you want to favor the main branch ('ours' strategy).
+- git checkout main
+- Then, start the merge process. If you're in the middle of a merge with conflicts, you might have paused at this point. If not, initiate the merge with your feature branch.
 
-To favor the main branch, you can use the following command. Replace 'file.txt' with the actual file that has a conflict.
+- git merge feature-branch
+- When you encounter the merge conflict, you can use Git's merge strategy to favor the changes of one side over the other. In this case, you want to favor the main branch ('ours' strategy).
 
-bash
-Copy code
-git checkout --ours file.txt
-This command will choose the version from the main branch, discarding the changes from the feature branch.
+- To favor the main branch, you can use the following command. Replace 'file.txt' with the actual file that has a conflict.
 
-Once you've resolved the conflict by favoring the main branch, you can add the resolved file to the staging area:
+- git checkout --ours file.txt
+- This command will choose the version from the main branch, discarding the changes from the feature branch.
 
-bash
-Copy code
-git add file.txt
-Now, commit the changes with the specified commit message:
 
-bash
-Copy code
-git commit -m "yyvtzv merged and favors his solution"
-Finally, complete the merge:
+- git add file.txt
+- Now, commit the changes with the specified commit message:
 
-bash
-Copy code
-git merge --continue
-This will finalize the merge, and the changes made by 'fzxrwbuz' will be discarded in favor of the main branch. The commit message 'yyvtzv merged and favors his solution' will be associated with this merge commit.
+
+- git commit -m "yyvtzv merged and favors his solution"
+- Finally, complete the merge:
+
+
+- git merge --continue
+- This will finalize the merge, and the changes made by 'fzxrwbuz' will be discarded in favor of the main branch. The commit message 'yyvtzv merged and favors his solution' will be associated with this merge commit.
 
 Remember to replace 'feature-branch' with the actual name of your feature branch, and 'file.txt' with the actual file(s) that have conflicts in your specific situation.
