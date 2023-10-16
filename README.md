@@ -49,6 +49,7 @@ Git is a version control system, while GitHub is a platform that provides a host
 
 > merge the latest changes from other temam feature to main to keep it up-to-date with respect to others merged feature
 - git merge main
+- git merge feature-branch  (Switch to main and run this)
 
 > Once the featur is merged you call pull the changes to your local repo and delete the featrue if the upstream is setup
 - git pull
@@ -156,3 +157,46 @@ Git is a version control system, while GitHub is a platform that provides a host
 
 > How can you revert a commit that has already been pushed to a remote repository?
 - Use the command: git revert <commit_hash> to create a new commit that undoes the changes introduced by the specified commit.
+
+
+
+> Resolving conflict
+> To resolve a merge conflict by discarding the changes made by a specific developer (in this case, 'fzxrwbuz') and commit the changes with the commit message 'yyvtzv merged and favors his solution', you can follow these steps:
+
+Start by checking out the branch where the conflict occurred (e.g., the main branch, assuming that's where you're merging your changes).
+
+bash
+Copy code
+git checkout main
+Then, start the merge process. If you're in the middle of a merge with conflicts, you might have paused at this point. If not, initiate the merge with your feature branch.
+
+bash
+Copy code
+git merge feature-branch
+When you encounter the merge conflict, you can use Git's merge strategy to favor the changes of one side over the other. In this case, you want to favor the main branch ('ours' strategy).
+
+To favor the main branch, you can use the following command. Replace 'file.txt' with the actual file that has a conflict.
+
+bash
+Copy code
+git checkout --ours file.txt
+This command will choose the version from the main branch, discarding the changes from the feature branch.
+
+Once you've resolved the conflict by favoring the main branch, you can add the resolved file to the staging area:
+
+bash
+Copy code
+git add file.txt
+Now, commit the changes with the specified commit message:
+
+bash
+Copy code
+git commit -m "yyvtzv merged and favors his solution"
+Finally, complete the merge:
+
+bash
+Copy code
+git merge --continue
+This will finalize the merge, and the changes made by 'fzxrwbuz' will be discarded in favor of the main branch. The commit message 'yyvtzv merged and favors his solution' will be associated with this merge commit.
+
+Remember to replace 'feature-branch' with the actual name of your feature branch, and 'file.txt' with the actual file(s) that have conflicts in your specific situation.
