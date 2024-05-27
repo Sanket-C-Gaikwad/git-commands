@@ -2,6 +2,12 @@
 Git is a distributed version control system used to track changes in source code during software development.
 Version control is used to manage changes to the document or the codebase.
 
+> Clone repository
+- git clone URL
+
+> Open viusal studio code GUI
+-  code .\git-repo\
+
 > Initializing a repo
 - git init
 - git branch -m master main
