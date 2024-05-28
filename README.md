@@ -85,6 +85,7 @@ Version control is used to manage changes to the document or the codebase.
 - git log -p
 - git log --graph
 - git log --grep='example'
+- git log --oneline
 
 
 > To reset to a particular commit copy the hash code from log and use below code
@@ -179,7 +180,9 @@ Version control is used to manage changes to the document or the codebase.
 - A submodule is a separate Git repository embedded within another repository. It allows the inclusion of external projects as dependencies.
 
 > How can you revert a commit that has already been pushed to a remote repository?
-- Use the command: git revert <commit_hash> to create a new commit that undoes the changes introduced by the specified commit.
+- Use the command: 
+- git log --oneline
+- git revert <commit_hash> to create a new commit that undoes the changes introduced by the specified commit.
 
 
 
