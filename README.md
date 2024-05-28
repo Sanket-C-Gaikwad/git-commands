@@ -29,6 +29,8 @@ Version control is used to manage changes to the document or the codebase.
 > Connecting git remote and local
 - git remote add origin URL
 
+> Setup a branch feature in main
+- git push --set-upstream origin main
 
 > Viewing the status
 - git status                  # Full status
@@ -41,7 +43,7 @@ Version control is used to manage changes to the document or the codebase.
 - git commit -am “Message”    # Skipping the stagig stage
 
 > What's the difference between Git and GitHub?
-Git is a version control system, while GitHub is a platform that provides a hosting website for Git repositories and collaboration tools.
+- Git is a version control system, while GitHub is a platform that provides a hosting website for Git repositories and collaboration tools.
 
 > Viewing the staged/unstaged changes
 - git diff                    # Shows unstaged changes
@@ -64,7 +66,7 @@ Git is a version control system, while GitHub is a platform that provides a host
 
 > Once the featur is merged you call pull the changes to your local repo and delete the featrue if the upstream is setup
 - git pull
-- git brach -d feature-1
+- git branch -d feature-1
 
 > Resetting the main brach to previous changes:
 - git reset --hard HEAD       (going back to HEAD)
@@ -74,6 +76,10 @@ Git is a version control system, while GitHub is a platform that provides a host
 
 > Logs
 - git log
+- git log -p
+- git log --graph
+- git log --grep='example'
+
 
 > To reset to a particular commit copy the hash code from log and use below code
 - git reset commit-hash-code-here
