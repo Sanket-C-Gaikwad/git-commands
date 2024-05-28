@@ -26,6 +26,9 @@ Version control is used to manage changes to the document or the codebase.
 - git config user.email
 - git config user.name
 
+> Connecting git remote and local
+- git remote add origin URL
+
 
 > Viewing the status
 - git status                  # Full status
