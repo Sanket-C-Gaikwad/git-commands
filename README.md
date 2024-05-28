@@ -68,6 +68,12 @@ Version control is used to manage changes to the document or the codebase.
 - git pull
 - git branch -d feature-1
 
+> Renaming a file will delete the previous file and create a new renamed file
+- git mv ./file1 file2
+
+> To keep the new create empty folder we have to initialise it with keep file 
+- .gitkeep
+
 > Resetting the main brach to previous changes:
 - git reset --hard HEAD       (going back to HEAD)
 - git reset --hard HEAD^      (going back to the commit before HEAD)
